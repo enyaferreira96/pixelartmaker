@@ -1,0 +1,73 @@
+<!--
+Pixel Art Maker Project
+Enya Ferreira 2020
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pixel Art Maker!</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Pixel Art Maker</h1>
+
+    <table id="options">
+        <tr>
+            <td>
+                <h2>Grid Size</h2>
+                <form id="grid_options">
+                    Grid Width:&nbsp;
+                    <input type="number" id="width" name="width" min="1" value="1">&nbsp;
+                    Grid Height:&nbsp;
+                    <input type="number" id="height" name="height" min="1" value="1">&nbsp;
+                    <input type="image" src="./refresh.png" alt="Refresh Grid">
+                </form>
+            </td>
+            <td>
+                <h2>Palette</h2>
+                <p class="instruction">Double-click to modify.</p>
+                <table id="colour_palette_panel">
+                    <tr>
+                        <td>
+                            <input type="color" id="selected_colour">
+                        </td>
+                        <td>
+                            <table id="colour_palette">
+                                <tr>
+                                    <td><input type="color" value="#ff0000"></td>
+                                    <td><input type="color" value="#0ff000"></td>
+                                    <td><input type="color" value="#00ff00"></td>
+                                    <td><input type="color" value="#000ff0"></td>
+                                    <td><input type="color" value="#0000ff"></td>
+                                    <td><input type="color" value="#fff000"></td>
+                                    <td><input type="color" value="#0fff00"></td>
+                                    <td><input type="color" value="#00fff0"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="color" value="#000fff"></td>
+                                    <td><input type="color" value="#f000ff"></td>
+                                    <td><input type="color" value="#ffff00"></td>
+                                    <td><input type="color" value="#0ffff0"></td>
+                                    <td><input type="color" value="#f0afff"></td>
+                                    <td><input type="color" value="#fff000"></td>
+                                    <td><input type="color" value="#0fff00"></td>
+                                    <td><input type="color" value="#f0f0f0"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <table id="pixel_grid"></table>
+
+    <script src="./designs.js"></script>
+</body>
+
+</html>

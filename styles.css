@@ -1,0 +1,119 @@
+/*
+Pixel Art Maker Project
+Enya Ferreira 2020
+*/
+* {
+    font-family: arial;
+}
+
+body {
+    text-align: center;
+}
+
+body>table {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+h1 {
+    font-family: Monoton !important;
+    font-size: 70px;
+    margin: 0.2em;
+}
+
+h2 {
+    margin-top: 0.5em;
+    color: #333;
+}
+
+table:not(#pixel_grid), tr:not(.pixel_row), td:not(.pixel) {
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    padding: 1em;
+}
+
+form {
+    font-size: .9em;
+}
+
+table:not(#pixel_grid) {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input {
+    border: solid 1px #dedede;
+    border-radius: 6px;
+    height: 2em;
+}
+
+input[type=number] {
+    font-weight: bold;
+    width: 6em;
+    text-align: center;
+}
+
+input[type=image] {
+    border: none;
+    vertical-align: bottom;
+    font-size: 1em;
+}
+
+input[type=color] {
+    background: none;
+}
+
+#options {
+    width: 66%;
+    border-radius: 6px;
+}
+
+#options > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) {
+    width: 50%;
+}
+
+#colour_palette_panel, #colour_palette_panel * {
+    border: none !important;
+    padding: 0 !important;
+}
+
+#selected_colour {
+    height:5em;
+    width:5em;
+    margin-right:1em;
+}
+
+#colour_palette * {
+    width: 3em;
+}
+
+#pixel_grid {
+    margin: 0 auto;
+    padding:0;
+    border-collapse: collapse;
+    border-radius: 0;
+}
+
+.pixel {
+    padding: 1em;
+    border:solid 1px #dedede;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.instruction {
+    font-size:.9em;
+    font-style: italic;
+}
